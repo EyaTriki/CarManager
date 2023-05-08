@@ -1,0 +1,116 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>@ViewData["Title"]</title>
+    <style>
+        /* CSS styles */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f9f9f9;
+        }
+
+        header {
+            background-color: #333;
+            color: #fff;
+            padding: 20px;
+            text-align: center;
+        }
+
+        section {
+            padding: 20px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-wrap: wrap;
+        }
+
+        .car {
+            border-radius: 6px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
+            margin: 20px;
+            max-width: 300px;
+            transition: transform 0.3s ease-in-out;
+        }
+
+            .car:hover {
+                transform: scale(1.05);
+            }
+
+            .car img {
+                width: 100%;
+                height: 200px;
+                object-fit: cover;
+            }
+
+        .car-content {
+            padding: 20px;
+            background-color: #fff;
+        }
+
+        .car h3 {
+            font-size: 18px;
+            margin-bottom: 10px;
+        }
+
+        .car p {
+            font-size: 14px;
+            margin-bottom: 8px;
+            color: #555;
+        }
+
+        footer {
+            background-color: #333;
+            color: #fff;
+            padding: 10px;
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>Welcome to the Car Showroom</h1>
+        <!-- Add any additional header content here -->
+    </header>
+
+    <section>
+        <!-- Add images and details of your featured cars here -->
+        <div class="car">
+            <img src="~/lib/1.jpg" alt="Car 1" />
+            <div class="car-content">
+                <h3>Car Model 1</h3>
+                <p>Price: $X,XXX</p>
+                <p>Description: Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+            </div>
+        </div>
+
+        <div class="car">
+            <img src="~/lib/4.jpg" alt="Car 2" />
+            <div class="car-content">
+                <h3>Car Model 2</h3>
+                <p>Price: $X,XXX</p>
+                <p>Description: Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+            </div>
+        </div>
+
+        <div class="car">
+            <img src="~/lib/3.jpg" alt="Car 3" />
+            <div class="car-content">
+                <h3>Car Model 3</h3>
+                <p>Price: $X,XXX</p>
+                <p>Description: Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+            </div>
+        </div>
+
+        <!-- Add more car listings as needed -->
+    </section>
+
+</body>
+</html>
